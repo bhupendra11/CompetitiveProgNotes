@@ -1,0 +1,41 @@
+
+import java.util.*;
+
+public class eval{
+
+ public static void main(String args[]){
+
+
+
+ }
+
+
+
+ public boolean hasHigherPrec(char a, char b){
+
+	
+
+
+
+
+
+
+}
+
+
+public int val(char t){
+
+	if(t=='(' || t==')'||t=='{' || t=='}' || t=='[' || t==']' ) 
+
+}
+
+
+
+
+
+
+
+
+
+}
+

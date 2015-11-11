@@ -1,0 +1,58 @@
+import java.util.*;
+
+
+public class stackLink{
+	private Node first = null;
+	private class Node{
+	String data;
+	Node next;
+
+
+	}
+
+	public boolean isEmpty(){
+
+	return first ==null;
+
+	}
+	public void push(String item){
+	Node oldfirst = first;
+	first = new Node();
+	first.data = item;
+	first.next=oldfirst;
+
+	}
+
+	public String pop(){
+	
+	String data = first.data;
+	first = first.next;
+	return data;
+
+	
+	}
+
+	public static void main(String args[]){
+
+	stackLink stack = new stackLink();
+	Scanner sc = new Scanner(System.in);
+	String in;
+
+	while(true ){
+	in =   sc.nextLine();
+
+	if(in.equals("end"))break;
+	else if(in.equals("-"))stack.pop();
+	else stack.push(in); 
+	
+
+	}
+		
+
+
+
+
+	}
+	
+
+}
